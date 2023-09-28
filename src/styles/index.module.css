@@ -1,0 +1,12 @@
+.logoTitle {
+    font-family: 'Noto Serif Georgian Variable', sans-serif;
+    font-size: 1.8rem;
+    color: #000;
+    margin-top: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .logoTitle {
+        color: #fff;
+    }
+  }
