@@ -7,7 +7,6 @@ export default class MyDocument extends Document {
     return (
       <Html data-color-scheme="light">
         <Head>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <body>
           {getInitColorSchemeScript()}

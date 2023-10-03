@@ -1,4 +1,6 @@
 import '@/styles/globals.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import type { AppProps } from 'next/app';
 import '@fontsource-variable/inter';
 import '@fontsource-variable/noto-serif-georgian';
@@ -8,11 +10,11 @@ import theme from '../utils/theme';
 function InnerApp({ Component, pageProps }: AppProps) {
   const { mode, systemMode } = useColorScheme();
 
-  const currentMode = mode === 'system' ? systemMode : mode;
+  const currentMode = mode === 'system' ? systemMode : mode; //dark mode support could be added
 
   return (
     <div style={{ 
-      backgroundColor: currentMode === 'light' ? theme.colorSchemes.light.palette.background.default : theme.colorSchemes.dark.palette.background.default,
+      backgroundColor: theme.colorSchemes.light.palette.background.default,
       position: 'absolute',
       top: 0,
       left: 0,

@@ -1,12 +1,39 @@
 .logoTitle {
     font-family: 'Noto Serif Georgian Variable', sans-serif;
     font-size: 1.8rem;
-    color: #000;
+    color: #000000;
     margin-top: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
     .logoTitle {
-        color: #fff;
+        color: #ffffff;
     }
-  }
+}
+
+
+.imageWidth
+ {
+    width: 60px;
+}
+
+@media only screen and (max-width: 1011px) {
+    .imageWidth
+     {
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .imageWidth
+     {
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 543px) {
+    .imageWidth
+     {
+        width: 50px;
+    }
+}
