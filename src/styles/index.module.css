@@ -5,35 +5,29 @@
     margin-top: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-    .logoTitle {
-        color: #ffffff;
-    }
-}
-
 
 .imageWidth
  {
-    width: 60px;
+    width: 250px;
 }
 
 @media only screen and (max-width: 1011px) {
     .imageWidth
      {
-        width: 60px;
+        width: 200px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .imageWidth
      {
-        width: 60px;
+        width: 200px;
     }
 }
 
 @media only screen and (max-width: 543px) {
     .imageWidth
      {
-        width: 50px;
+        width: 200px;
     }
 }

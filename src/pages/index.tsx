@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <Stack direction='column' alignItems="center" >
         <Stack direction="row" alignItems={"center"} sx={{ mt: "10px", width: ["95%", "95%", "95%", "90%"], maxWidth: "1200px"}} alignContent={"flex-start"}>
-          <img src="/logoIFAred.png" alt="I F A Logo" className={indexStyles.imageWidth} />
-          <Typography level="h3" style={{ flexGrow: 1 }}>InnField Advisory</Typography>
+          <img src="/IFA-LogoNew.png" alt="I F A Logo" className={indexStyles.imageWidth}/>
+          <div style={{ flexGrow: 1 }} />
           <Button endDecorator={<Mail />} variant='outlined' size='sm'>Contact</Button>
         </Stack>
         <Divider sx={{ width: ["95%", "95%", "95%", "90%"], mt: "10px", alignSelf: "center", maxWidth: "1200px" }} />

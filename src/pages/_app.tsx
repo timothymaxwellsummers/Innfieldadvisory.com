@@ -6,11 +6,22 @@ import '@fontsource-variable/inter';
 import '@fontsource-variable/noto-serif-georgian';
 import { CssVarsProvider, useColorScheme } from '@mui/joy/styles';
 import theme from '../utils/theme';
+import React, { useState } from 'react';
 
 function InnerApp({ Component, pageProps }: AppProps) {
-  const { mode, systemMode } = useColorScheme();
 
-  const currentMode = mode === 'system' ? systemMode : mode; //dark mode support could be added
+  const { mode, setMode } = useColorScheme();
+  const [mounted, setMounted] = useState(false);
+
+  // necessary for server-side rendering
+  // because mode is undefined on the server
+  React.useEffect(() => {
+    setMounted(true);
+    setMode('light');
+  }, []);
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div style={{ 
@@ -29,7 +40,7 @@ function InnerApp({ Component, pageProps }: AppProps) {
 
 export default function App(props: AppProps) {
   return (
-    <CssVarsProvider theme={theme} defaultMode="system">
+    <CssVarsProvider theme={theme}>
       <InnerApp {...props} />
     </CssVarsProvider>
   );
