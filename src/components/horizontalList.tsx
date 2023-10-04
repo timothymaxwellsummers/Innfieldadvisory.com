@@ -105,6 +105,16 @@ export default class PreviousNextMethods extends Component {
                             <img src="/Acc_Logo_Black_Purple_RGB.png" alt="I F A Logo" style={{ width: "100px", opacity:"0.5" }} />
                         </Stack>
                     </div>
+                    <div key={10} className={listStyle.centeredSlideContent}>
+                        <Stack direction="column" alignItems={"center"} justifyContent={"center"} minHeight={"100px"}>
+                            <img src="/mefb-logo.png" alt="I F A Logo" style={{ width: "100px", opacity:"0.5" }} />
+                        </Stack>
+                    </div>
+                    <div key={11} className={listStyle.centeredSlideContent}>
+                        <Stack direction="column" alignItems={"center"} justifyContent={"center"} minHeight={"100px"}>
+                            <img src="/2560px-KPMG_logo.svg.png" alt="I F A Logo" style={{ width: "100px", opacity:"0.5" }} />
+                        </Stack>
+                    </div>
                 </Slider>
                 <Stack direction={"row"} alignItems={"center"}>
                     <div style={{flexGrow:"1"}} />

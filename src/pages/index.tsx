@@ -12,14 +12,11 @@ export default function Home() {
         <Stack direction="row" alignItems={"center"} sx={{ mt: "10px", width: ["95%", "95%", "95%", "90%"], maxWidth: "1200px"}} alignContent={"flex-start"}>
           <img src="/IFA-LogoNew.png" alt="I F A Logo" className={indexStyles.imageWidth}/>
           <div style={{ flexGrow: 1 }} />
-          <a href="mailto:contact@innfieldadvisory.com" style={{textDecoration: "none"}}>
-          <Button endDecorator={<Mail />} variant='outlined' size='sm'>Contact</Button>
-          </a>
         </Stack>
         <Divider sx={{ width: ["95%", "95%", "95%", "90%"], mt: "10px", alignSelf: "center", maxWidth: "1200px" }} />
         <Stack direction={"column"} sx={{ mt: "10px", width: ["90%", "80%", "80%", "700px"] }} pt={3}>
           <Typography level="h3">About us</Typography>
-          <Typography pt={2}> InnField Advisory, an initiative by London School of Economics postgraduates, offers pro bono research and advisory services. We specialize in policy and infrastructure projects for low and middle-income countries, translating our academic prowess into real-world solutions.</Typography>
+          <Typography pt={2}>InnField Advisory is an initiative led by postgraduate students from the London School of Economics and Political Science (LSE), coming from various academic backgrounds. We provide pro bono research and advisory services to fill ad hoc project needs in policy and infrastructure with a focus on low- and middle-income countries.</Typography>
           <Typography level="h3" pt={6}>What we Offer</Typography>
           <List variant='outlined' sx={{ mt: "20px", borderRadius: 'sm' }} >
             <ListItem>
