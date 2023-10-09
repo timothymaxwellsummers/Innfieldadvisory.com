@@ -12,6 +12,9 @@ export default function Home() {
         <Stack direction="row" alignItems={"center"} sx={{ mt: "10px", width: ["95%", "95%", "95%", "90%"], maxWidth: "1200px"}} alignContent={"flex-start"}>
           <img src="/IFA-LogoNew.png" alt="I F A Logo" className={indexStyles.imageWidth}/>
           <div style={{ flexGrow: 1 }} />
+          <a href="mailto:contact@innfieldadvisory.com" style={{textDecoration: "none"}}>
+          <Button endDecorator={<Mail />} variant='outlined' size='sm'>Contact</Button>
+          </a>
         </Stack>
         <Divider sx={{ width: ["95%", "95%", "95%", "90%"], mt: "10px", alignSelf: "center", maxWidth: "1200px" }} />
         <Stack direction={"column"} sx={{ mt: "10px", width: ["90%", "80%", "80%", "700px"] }} pt={3}>
